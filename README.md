@@ -1,5 +1,5 @@
 
-# Proyecto 4 OpenGL 👩🏻‍💻🧲
+# Proyecto 4 OpenGL 👩🏻‍💻
 Proyecto 4: OpenGL
 
 # Requisitos 
@@ -8,6 +8,12 @@ Proyecto 4: OpenGL
 - glm
 - numpy
 - pygame
+
+## Teclas
+- WASD para mover la Cámara
+- Q para ver el lobo
+- E para ver la rata
+- R para ver el Dogo
 
 ### Correr el programa:
 Abrir el CMD y compilar
