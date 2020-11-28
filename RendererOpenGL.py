@@ -40,16 +40,18 @@ r.setShaders(shaders.vertex_shader, shaders.fragment_shader)
 #r.modelList.append(Model('dogo.obj', 'dogo1.bmp'))
 
 #Incluir audio
-def play_music():
+def Audio_rata():
         pygame.mixer.pre_init(44100, -16, 2, 2048)
         pygame.mixer.init()
-        pygame.mixer.music.load("audio.mp3")
+        pygame.mixer.music.load("rata.mp3")
         pygame.mixer.music.play(10)
 
-def play_audio():
-    pygame.mixer.music.load('audio.mp3')
+def Audio_lobo():
+    pygame.mixer.music.load('wolf.mp3')
     pygame.mixer.music.play(0)
-
+def Audio_dogo():
+    pygame.mixer.music.load('dogo.mp3')
+    pygame.mixer.music.play(0)
 
 isPlaying = True
 while isPlaying:
@@ -67,16 +69,21 @@ while isPlaying:
         r.camPosition.z += 5 * deltaTime
     if keys[K_e]:
         #Reproduce la música
-        play_audio()
-        r.modelList.clear
+        Audio_rata()
+        r.modelList.clear()
         r.modelList.append(Model('rata.obj', 'rata.bmp'))
     if keys[K_q]:
         #Reproduce la música
-        play_audio()
-        r.modelList.clear
+        Audio_lobo()
+        r.modelList.clear()
         r.modelList.append(Model('wolf.obj', 'wolf.bmp'))
     if keys[K_r]:
-        r.modelList.clear
+        #Reproduce la música
+        Audio_dogo()
+        r.camPosition.z = -10
+        r.camPosition.x = 4
+        r.camPosition.y = 8
+        r.modelList.clear()
         r.modelList.append(Model('dogo.obj', 'dogo1.bmp'))
 
     for ev in pygame.event.get():
