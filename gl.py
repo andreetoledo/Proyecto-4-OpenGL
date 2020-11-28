@@ -94,8 +94,10 @@ class Renderer(object):
         glViewport(0, 0, self.width, self.height)
 
         self.temp = 0
-
+        self.cont=0 
+        self.expl=0
         self.modelList = []
+        self.activeModelIndex=0
 
         # View Matrix
         self.camPosition = glm.vec3(0,0,0)
