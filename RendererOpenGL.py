@@ -19,7 +19,7 @@ r.pointLight.x = 5
 
 r.setShaders(shaders.vertex_shader, shaders.fragment_shader)
 
-r.modelList.append(Model('china.obj', 'china.bmp'))
+r.modelList.append(Model('mustang.obj', 'mustang.bmp'))
 
 
 
