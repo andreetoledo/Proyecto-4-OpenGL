@@ -6,13 +6,7 @@ import shaders
 import glm
 from math import sqrt, sin, cos, tan, radians
 
-cubeX = 0
-cubeY = 0
-cubeZ = 0
-roll = 0
-pitch = 0
-yaw = 0
-distance = 0
+
 deltaTime = 0.0
 
 changeY=False
